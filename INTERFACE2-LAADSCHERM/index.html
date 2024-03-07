@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+	<title>Laad Scherm | INTERFACE2</title>
+	<link rel="stylesheet" href="style.css">
+  <link rel="icon" href="cloud.svg">
+</head>
+<body>
+	<div class='wrap'>
+  <div class='angle'></div>
+  <div class='angle'></div>
+  <div class='angle'></div>
+  <div class='angle'></div>
+</div>
+<svg version='1.1' xmlns='http://www.w3.org/2000/svg'>
+  <defs>
+    <filter id='goo'>
+      <fegaussianblur in='SourceGraphic' result='blur' stddeviation='12'></fegaussianblur>
+      <fecolormatrix in='blur' mode='matrix' result='goo' values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9'></fecolormatrix>
+      <fecomposite in2='goo' in='SourceGraphic' operator='atop'></fecomposite>
+    </filter>
+  </defs>
+</svg>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
